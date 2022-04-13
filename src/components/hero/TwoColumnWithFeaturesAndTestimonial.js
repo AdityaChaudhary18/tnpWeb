@@ -53,7 +53,7 @@ const CustomerName = tw.p`mt-4 font-bold`;
 const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`;
 
 export default ({
-  heading = "IIIT Sonepat TnP",
+  heading = "Placement Cell",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
   imageSrc = "https://images.shiksha.com/mediadata/images/1608280176phpraNiTa.jpeg",
   imageDecoratorBlob = true,
