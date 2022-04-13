@@ -75,9 +75,8 @@ export default ({
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About Us</NavLink>
-      <NavLink href="/#">Our Recruiters</NavLink>
       <NavLink href="/#">Academics</NavLink>
+      <NavLink href="/#">Our Recruiters</NavLink>
       <NavLink href="/#">Statistics</NavLink>
       <NavLink href="/#">Why Us</NavLink>
       <NavLink href="/#">Procedure</NavLink>
