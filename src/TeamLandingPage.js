@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
+import MainFeature from "components/cards/ProfileThreeColGrid";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import HeaderBase, {

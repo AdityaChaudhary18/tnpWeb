@@ -106,7 +106,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 // import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import StatsLandingPage from "StatsLandingPage";
-import ProfileThreeColGrid from "components/cards/ProfileThreeColGrid";
+import TeamLandingPage from "TeamLandingPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
@@ -132,7 +132,7 @@ export default function App() {
           <StatsLandingPage />
         </Route>
         <Route path="/team">
-          <ProfileThreeColGrid />
+          <TeamLandingPage />
         </Route>
         <Route path="/">
           <ServiceLandingPage />
