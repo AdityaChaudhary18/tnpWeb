@@ -16,7 +16,7 @@ const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const ThreeColumn = tw.div`flex flex-col items-center justify-center lg:items-stretch lg:flex-row flex-wrap`;
 const Column = tw.div`mt-24 lg:w-1/3`;
-
+const Category = tw.div`mt-4 text-secondary-100 font-bold text-sm`;
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
 const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
 
@@ -62,19 +62,19 @@ export default ({
       imageSrc: "http://iiitsonepat.ac.in/storage/Photo-Director.jpg",
       author: "MN Doja",
       category: "Director",
-      title: "Optimizing your website for your main keyword",
+      title: "Prof. M.N. Doja",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Being the Director of an ‘Institution of National Importance’, it's a matter of pride as well as responsibility....",
       url: "https://reddit.com",
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1479660095429-2cf4e1360472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      author: "Anjali Bajaj",
-      category: "TnP Officer",
-      title: "Creating The perfect advertisement campaign",
+      author: "Dr. Anjali Bajaj",
+      category: "Training and Placement Officer",
+      title: "Anjali Bajaj",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Being the TnP of an ‘Institution of National Importance’, it's a matter of pride as well as responsibility....",
       url: "https://timerse.com",
     },
   ];
@@ -92,18 +92,9 @@ export default ({
               <Card>
                 <Image imageSrc={post.imageSrc} />
                 <Details>
-                  <MetaContainer>
-                    <Meta>
-                      <UserIcon />
-                      <div>{post.author}</div>
-                    </Meta>
-                    <Meta>
-                      <TagIcon />
-                      <div>{post.category}</div>
-                    </Meta>
-                  </MetaContainer>
                   <Title>{post.title}</Title>
-
+                  <Category>{post.category}</Category>
+                  <p style={{ fontSize: "14px" }}>{post.description}</p>
                   <Link href={post.url}>Read More</Link>
                 </Details>
               </Card>
