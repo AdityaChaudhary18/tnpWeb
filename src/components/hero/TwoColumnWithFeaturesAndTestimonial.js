@@ -80,7 +80,7 @@ export default ({
       <NavLink href="/stats">Statistics</NavLink>
       <NavLink href="/#">Why Us</NavLink>
       <NavLink href="/#">Procedure</NavLink>
-      <NavLink href="/#">Team</NavLink>
+      <NavLink href="/team">Team</NavLink>
     </NavLinks>,
   ];
   return (
