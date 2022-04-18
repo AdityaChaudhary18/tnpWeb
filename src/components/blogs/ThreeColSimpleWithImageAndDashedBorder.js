@@ -52,7 +52,7 @@ export default ({
   subheading = "Blog",
   heading = (
     <>
-      Message from <span tw="text-primary-500">Institute</span>
+      Message from <span tw="text-primary-900">Institute</span>
     </>
   ),
   description = "Some amazing blog posts that are written by even more amazing people.",

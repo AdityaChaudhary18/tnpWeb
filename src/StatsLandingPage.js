@@ -19,6 +19,9 @@ import {
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg";
+import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
+import FeatureStatsWhite from "components/features/ThreeColCenteredStatsPrimaryBackgroundWhite.js";
+import Footer from "components/footers/FiveColumnWithInputForm.js";
 
 const Header = tw(HeaderBase)`max-w-none`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
@@ -89,6 +92,75 @@ export default ({
     <AnimationRevealPage>
       <Header links={navLinks} />
       <MainFeature />
+      <FeatureStats
+        heading="2017-2021"
+        stats={[
+          {
+            key: "Average Placement",
+            value: "13.6LPA",
+          },
+          {
+            key: "Highest Placement",
+            value: "41LPA",
+          },
+          {
+            key: "Lowest Placement",
+            value: "5LPA",
+          },
+        ]}
+      />
+      <FeatureStatsWhite
+        heading="2016-2020"
+        stats={[
+          {
+            key: "Average Placement",
+            value: "9.21LPA",
+          },
+          {
+            key: "Highest Placement",
+            value: "23.84LPA",
+          },
+          {
+            key: "Lowest Placement",
+            value: "5.5LPA",
+          },
+        ]}
+      />
+      <FeatureStats
+        heading="2015-2019"
+        stats={[
+          {
+            key: "Average Placement",
+            value: "8.19LPA",
+          },
+          {
+            key: "Highest Placement",
+            value: "40.63LPA",
+          },
+          {
+            key: "Lowest Placement",
+            value: "4.1LPA",
+          },
+        ]}
+      />
+      <FeatureStatsWhite
+        heading="2014-2018"
+        stats={[
+          {
+            key: "Average Placement",
+            value: "6.44LPA",
+          },
+          {
+            key: "Highest Placement",
+            value: "23.84LPA",
+          },
+          {
+            key: "Lowest Placement",
+            value: "3.5LPA",
+          },
+        ]}
+      />
+      <Footer />
     </AnimationRevealPage>
   );
 };

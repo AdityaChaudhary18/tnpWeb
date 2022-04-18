@@ -14,8 +14,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-10`;
-const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
+const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-10 `;
+const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-10 `;
 const ImageColumn = tw(
   Column
 )`md:w-6/12 lg:w-5/12 flex-shrink-0 h-80 md:h-auto`;
@@ -39,7 +39,7 @@ const Description = tw.p`text-center md:text-left text-sm md:text-base lg:text-l
 
 const Statistics = tw.div`mt-6 lg:mt-8 xl:mt-16 flex flex-wrap`;
 const Statistic = tw.div`text-lg sm:text-2xl lg:text-3xl w-1/2 mt-4 lg:mt-10 text-center md:text-left`;
-const Value = tw.div`font-bold text-primary-500`;
+const Value = tw.div`font-bold text-primary-900`;
 const Key = tw.div`font-medium text-gray-700`;
 const data = [
   {
