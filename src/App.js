@@ -52,6 +52,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 // import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 // import TabGrid from "components/cards/TabCardGrid.js";
+import TabGrid from "components/cards/ThreeColContactDetails";
 
 // import Blog from "components/blogs/ThreeColSimpleWithImage.js";
 // import Blog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
@@ -124,7 +125,13 @@ export default function App() {
         <Route path="/thank-you">
           <ThankYouPage />
         </Route>
+        <Route path="/about">
+          <TabGrid />
+        </Route>
         <Route path="/stats">
+          <StatsLandingPage />
+        </Route>
+        <Route path="/team">
           <StatsLandingPage />
         </Route>
         <Route path="/">
