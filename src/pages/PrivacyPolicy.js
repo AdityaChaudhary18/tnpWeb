@@ -36,8 +36,7 @@ const Text = styled.div`
 `;
 export default ({ headingText = "Why Recruit at IIITS?" }) => {
   return (
-    <AnimationRevealPage>
-      <Header />
+    <>
       <Container>
         <ContentWithPaddingXl>
           <HeadingRow>
@@ -110,6 +109,6 @@ export default ({ headingText = "Why Recruit at IIITS?" }) => {
         </ContentWithPaddingXl>
       </Container>
       <Footer />
-    </AnimationRevealPage>
+    </>
   );
 };

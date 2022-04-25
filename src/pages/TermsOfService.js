@@ -37,8 +37,7 @@ const Text = styled.div`
 
 export default ({ headingText = "Terms And Condition" }) => {
   return (
-    <AnimationRevealPage>
-      <Header />
+    <>
       <Container>
         <ContentWithPaddingXl>
           <HeadingRow>
@@ -270,6 +269,6 @@ export default ({ headingText = "Terms And Condition" }) => {
         </ContentWithPaddingXl>
       </Container>
       <Footer />
-    </AnimationRevealPage>
+    </>
   );
 };
