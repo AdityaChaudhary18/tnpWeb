@@ -9,6 +9,7 @@ import HeaderBase, {
   NavLink,
   PrimaryLink,
 } from "components/headers/light.js";
+import Footer from "components/footers/FiveColumnWithInputForm.js";
 import { SectionHeading } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
@@ -82,12 +83,13 @@ export default ({
       <NavLink href="/why-us">Why Us</NavLink>
       <NavLink href="/procedure">Procedure</NavLink>
       <NavLink href="/team">Team</NavLink>
-    </NavLinks>
+    </NavLinks>,
   ];
   return (
     <AnimationRevealPage>
       <Header links={navLinks} />
       <MainFeature />
+      <Footer />
     </AnimationRevealPage>
   );
 };

@@ -87,8 +87,8 @@ export default ({
       {/* <NavLink href="/#">Academics</NavLink> */}
       <NavLink href="/recruiters">Our Recruiters</NavLink>
       <NavLink href="/stats">Statistics</NavLink>
-      <NavLink href="/#">Why Us</NavLink>
-      <NavLink href="/#">Procedure</NavLink>
+      <NavLink href="/why-us">Why Us</NavLink>
+      <NavLink href="/procedure">Procedure</NavLink>
       <NavLink href="/team">Team</NavLink>
     </NavLinks>,
   ];

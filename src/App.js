@@ -108,6 +108,8 @@ import ThankYouPage from "ThankYouPage.js";
 import StatsLandingPage from "StatsLandingPage";
 import TeamLandingPage from "TeamLandingPage";
 import RecruiterLandingPage from "RecruiterLandingPage";
+import WhyUsLandingPage from "WhyUsLandingPage";
+import ProcedureLandingPage from "ProcedureLandingPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
@@ -137,6 +139,12 @@ export default function App() {
         </Route>
         <Route path="/recruiters">
           <RecruiterLandingPage />
+        </Route>
+        <Route path="/why-us">
+          <WhyUsLandingPage />
+        </Route>
+        <Route path="/procedure">
+          <ProcedureLandingPage />
         </Route>
         <Route path="/">
           <ServiceLandingPage />
