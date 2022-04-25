@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
+import MainFeature from "components/features/TwoColWithSteps";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import HeaderBase, {
@@ -19,9 +19,6 @@ import {
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg";
-import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
-import FeatureStatsWhite from "components/features/ThreeColCenteredStatsPrimaryBackgroundWhite.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
 
 const Header = tw(HeaderBase)`max-w-none`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
@@ -85,97 +82,12 @@ export default ({
       <NavLink href="/#">Why Us</NavLink>
       <NavLink href="/#">Procedure</NavLink>
       <NavLink href="/team">Team</NavLink>
-    </NavLinks>,
+    </NavLinks>
   ];
   return (
     <AnimationRevealPage>
       <Header links={navLinks} />
       <MainFeature />
-      <FeatureStats
-        heading="2017-2021"
-        stats={[
-          {
-            key: "Average Package",
-            value: "13.6LPA",
-          },
-          {
-            key: "Highest Package",
-            value: "41LPA",
-          },
-          {
-            key: "Lowest Package",
-            value: "5LPA",
-          },
-          {
-            key: "Median Package",
-            value: "12LPA",
-          },
-        ]}
-      />
-      <FeatureStatsWhite
-        heading="2016-2020"
-        stats={[
-          {
-            key: "Average Package",
-            value: "9.21LPA",
-          },
-          {
-            key: "Highest Package",
-            value: "23.84LPA",
-          },
-          {
-            key: "Lowest Package",
-            value: "5.5LPA",
-          },
-          {
-            key: "Median Package",
-            value: "9LPA",
-          },
-        ]}
-      />
-      <FeatureStats
-        heading="2015-2019"
-        stats={[
-          {
-            key: "Average Package",
-            value: "8.19LPA",
-          },
-          {
-            key: "Highest Package",
-            value: "40.63LPA",
-          },
-          {
-            key: "Lowest Package",
-            value: "4.1LPA",
-          },
-          {
-            key: "Median Package",
-            value: "7LPA",
-          },
-        ]}
-      />
-      <FeatureStatsWhite
-        heading="2014-2018"
-        stats={[
-          {
-            key: "Average Package",
-            value: "6.44LPA",
-          },
-          {
-            key: "Highest Package",
-            value: "23.84LPA",
-          },
-          {
-            key: "Lowest Package",
-            value: "3.5LPA",
-          },
-          {
-            key: "Median Package",
-            value: "5LPA",
-          },
-        ]}
-      />
-      <Footer />
     </AnimationRevealPage>
   );
 };

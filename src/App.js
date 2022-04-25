@@ -107,6 +107,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 import ThankYouPage from "ThankYouPage.js";
 import StatsLandingPage from "StatsLandingPage";
 import TeamLandingPage from "TeamLandingPage";
+import RecruiterLandingPage from "RecruiterLandingPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
@@ -133,6 +134,9 @@ export default function App() {
         </Route>
         <Route path="/team">
           <TeamLandingPage />
+        </Route>
+        <Route path="/recruiters">
+          <RecruiterLandingPage />
         </Route>
         <Route path="/">
           <ServiceLandingPage />
