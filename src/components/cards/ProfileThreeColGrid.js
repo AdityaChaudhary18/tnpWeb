@@ -154,7 +154,7 @@ export default ({
     {
       imageSrc:
         "https://media-exp1.licdn.com/dms/image/C4E03AQGY1ah1gLqqLQ/profile-displayphoto-shrink_800_800/0/1650295199940?e=1655942400&v=beta&t=TJuWf7HipsUgE4waWNXHXMrNvigfOukA3vL9AsSveAU",
-      position: `Volunteer`,
+      position: `${position} & Developer`,
       name: "Vansh Kela",
       links: [
         {
@@ -187,13 +187,13 @@ export default ({
               <CardContent>
                 <span className="position">{card.position}</span>
                 <span className="name">{card.name}</span>
-                <CardLinks>
+                {/* <CardLinks>
                   {card.links.map((link, linkIndex) => (
                     <a key={linkIndex} className="link" href={link.url}>
                       <link.icon className="icon" />
                     </a>
                   ))}
-                </CardLinks>
+                </CardLinks> */}
               </CardContent>
             </Card>
           ))}

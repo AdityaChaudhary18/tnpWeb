@@ -65,7 +65,7 @@ export default ({
       title: "Prof. M.N. Doja",
       description:
         "Being the Director of an ‘Institution of National Importance’, it's a matter of pride as well as responsibility....",
-      url: "https://reddit.com",
+      url: "http://iiitsonepat.ac.in/home/directors",
     },
     {
       imageSrc:
@@ -74,8 +74,8 @@ export default ({
       category: "Training and Placement Officer",
       title: "Anjali Bajaj",
       description:
-        "Being the TnP of an ‘Institution of National Importance’, it's a matter of pride as well as responsibility....",
-      url: "https://timerse.com",
+        "Being the TnP Officer of an ‘Institution of National Importance’, it's a matter of pride as well as responsibility....",
+      url: "http://iiitsonepat.ac.in/home/directors",
     },
   ];
   return (
