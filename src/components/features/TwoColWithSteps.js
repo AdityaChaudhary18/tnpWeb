@@ -81,7 +81,11 @@ export default ({
           <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
           {imageDecoratorBlob && <DecoratorBlob css={decoratorBlobCss} />}
         </ImageColumn>
-        <TextColumn textOnLeft={textOnLeft}>
+        <ImageColumn>
+          <Image src={imageSrc} imageBorder={imageBorder} imageShadow={imageShadow} imageRounded={imageRounded} />
+          {imageDecoratorBlob && <DecoratorBlob css={decoratorBlobCss} />}
+        </ImageColumn>
+        {/* <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
             <Subheading>{subheading}</Subheading>
             <Heading>{heading}</Heading>
@@ -97,7 +101,7 @@ export default ({
               ))}
             </Steps>
           </TextContent>
-        </TextColumn>
+        </TextColumn> */}
       </TwoColumn>
     </Container>
   );
