@@ -96,16 +96,20 @@ export default ({
         heading="2017-2021"
         stats={[
           {
-            key: "Average Placement",
+            key: "Average Package",
             value: "13.6LPA",
           },
           {
-            key: "Highest Placement",
+            key: "Highest Package",
             value: "41LPA",
           },
           {
-            key: "Lowest Placement",
+            key: "Lowest Package",
             value: "5LPA",
+          },
+          {
+            key: "Median Package",
+            value: "12LPA",
           },
         ]}
       />
@@ -113,16 +117,20 @@ export default ({
         heading="2016-2020"
         stats={[
           {
-            key: "Average Placement",
+            key: "Average Package",
             value: "9.21LPA",
           },
           {
-            key: "Highest Placement",
+            key: "Highest Package",
             value: "23.84LPA",
           },
           {
-            key: "Lowest Placement",
+            key: "Lowest Package",
             value: "5.5LPA",
+          },
+          {
+            key: "Median Package",
+            value: "9LPA",
           },
         ]}
       />
@@ -130,16 +138,20 @@ export default ({
         heading="2015-2019"
         stats={[
           {
-            key: "Average Placement",
+            key: "Average Package",
             value: "8.19LPA",
           },
           {
-            key: "Highest Placement",
+            key: "Highest Package",
             value: "40.63LPA",
           },
           {
-            key: "Lowest Placement",
+            key: "Lowest Package",
             value: "4.1LPA",
+          },
+          {
+            key: "Median Package",
+            value: "7LPA",
           },
         ]}
       />
@@ -147,16 +159,20 @@ export default ({
         heading="2014-2018"
         stats={[
           {
-            key: "Average Placement",
+            key: "Average Package",
             value: "6.44LPA",
           },
           {
-            key: "Highest Placement",
+            key: "Highest Package",
             value: "23.84LPA",
           },
           {
-            key: "Lowest Placement",
+            key: "Lowest Package",
             value: "3.5LPA",
+          },
+          {
+            key: "Median Package",
+            value: "5LPA",
           },
         ]}
       />

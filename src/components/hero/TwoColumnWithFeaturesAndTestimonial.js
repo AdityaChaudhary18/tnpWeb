@@ -17,6 +17,7 @@ import {
 import { ReactComponent as CheckboxIcon } from "feather-icons/dist/icons/check-circle.svg";
 import { ReactComponent as QuotesLeftIconBase } from "images/quotes-l.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/dot-pattern.svg";
+import logoIIIT from "../../images/logoIIIT.png";
 
 const Header = tw(HeaderBase)`max-w-none`;
 const Row = tw.div`flex flex-col lg:flex-row justify-between items-center lg:pt-16 max-w-screen-2xl mx-auto sm:px-8`;
@@ -55,7 +56,7 @@ const CustomerCompany = tw.p`mt-1 text-sm text-gray-500`;
 export default ({
   heading = "Placement Cell",
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  imageSrc = "https://images.shiksha.com/mediadata/images/1608280176phpraNiTa.jpeg",
+  // imageSrc = "",
   imageDecoratorBlob = true,
   primaryButtonUrl = "https://google.com",
   primaryButtonText = "Get Started",
@@ -75,7 +76,7 @@ export default ({
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">Academics</NavLink>
+      {/* <NavLink href="/#">Academics</NavLink> */}
       <NavLink href="/#">Our Recruiters</NavLink>
       <NavLink href="/stats">Statistics</NavLink>
       <NavLink href="/#">Why Us</NavLink>
@@ -110,8 +111,8 @@ export default ({
             </TextColumn>
             <ImageColumn>
               <ImageContainer>
-                <Image src={imageSrc} />
-                {imageDecoratorBlob && <ImageDecoratorBlob />}
+                <Image src={logoIIIT} />
+                {/* {imageDecoratorBlob && <ImageDecoratorBlob />} */}
                 {/* <Testimonial>
                   <QuotesLeftIcon />
                   <Quote>{testimonial.quote}</Quote>
@@ -121,7 +122,7 @@ export default ({
                   </CustomerCompany>
                 </Testimonial> */}
               </ImageContainer>
-              <Offsetbackground />
+              {/* <Offsetbackground /> */}
             </ImageColumn>
           </Row>
         </ContentWithVerticalPadding>

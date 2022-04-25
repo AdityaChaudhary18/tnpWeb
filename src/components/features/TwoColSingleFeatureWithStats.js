@@ -76,20 +76,20 @@ export default ({ textOnLeft = false }) => {
   //Change the statistics variable as you like, add or delete objects
   const statistics = [
     {
-      key: "Countries",
-      value: "192",
+      key: "DATA1",
+      value: "x",
     },
     {
-      key: "Hotels",
-      value: "479",
+      key: "DATA2",
+      value: "y",
     },
     {
-      key: "Rooms",
-      value: "2093",
+      key: "DATA3",
+      value: "z",
     },
     {
-      key: "Workers",
-      value: "10347",
+      key: "DATA4",
+      value: "x",
     },
   ];
 
@@ -119,12 +119,10 @@ export default ({ textOnLeft = false }) => {
         </ResponsiveContainer>
         <TextColumn textOnLeft={textOnLeft}>
           <TextContent>
-            <Heading>We have the best service.</Heading>
+            <Heading>Placement Statistics</Heading>
             <Description>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Description>
             <Statistics>
               {statistics.map((statistic, index) => (

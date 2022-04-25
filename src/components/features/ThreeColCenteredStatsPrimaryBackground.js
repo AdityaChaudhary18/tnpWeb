@@ -20,9 +20,9 @@ const Description = tw(
 )`text-gray-400 text-center mx-auto max-w-screen-md`;
 
 const StatsContainer = tw.div`mt-8 flex flex-col sm:flex-row items-center justify-center flex-wrap max-w-screen-md justify-between mx-auto`;
-const Stat = tw.div`flex flex-col text-center p-4 tracking-wide`;
+const Stat = tw.div`flex flex-col text-center p-1 tracking-wide`;
 const StatKey = tw.div`text-xl font-medium`;
-const StatValue = tw.div`text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-black`;
+const StatValue = tw.div`text-4xl sm:text-3xl md:text-4xl lg:text-4xl font-black`;
 
 export default ({
   subheading = "",
@@ -36,10 +36,6 @@ export default ({
     {
       key: "Highest Placement",
       value: "41LPA",
-    },
-    {
-      key: "Lowest Placement",
-      value: "8LPA",
     },
   ],
 }) => {
