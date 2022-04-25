@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import MainFeature from "pages/PrivacyPolicy.js";
+import MainFeature from "pages/TermsOfService";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import HeaderBase, {
@@ -82,7 +82,7 @@ export default ({
       <NavLink href="/why-us">Why Us</NavLink>
       <NavLink href="/procedure">Procedure</NavLink>
       <NavLink href="/team">Team</NavLink>
-    </NavLinks>
+    </NavLinks>,
   ];
   return (
     <AnimationRevealPage>
