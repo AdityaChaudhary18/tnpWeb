@@ -11,7 +11,7 @@ import { ReactComponent as UserIcon } from "feather-icons/dist/icons/user.svg";
 import { ReactComponent as TagIcon } from "feather-icons/dist/icons/tag.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-3.svg";
-
+import anjaliMaamPic from "../../images/anjali.jpg";
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const ThreeColumn = tw.div`flex flex-col items-center justify-center lg:items-stretch lg:flex-row flex-wrap`;
@@ -23,7 +23,7 @@ const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w
 const Card = tw.div`lg:mx-4 xl:mx-8 max-w-sm flex flex-col h-full`;
 const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
-  tw`bg-cover bg-center h-80 lg:h-64 rounded rounded-b-none`,
+  tw`bg-cover bg-top h-80 lg:h-80 rounded rounded-b-none`,
 ]);
 
 const Details = tw.div`p-6 rounded border-2 border-t-0 rounded-t-none border-dashed border-primary-100 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
@@ -68,8 +68,7 @@ export default ({
       url: "http://iiitsonepat.ac.in/home/directors",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1479660095429-2cf4e1360472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+      imageSrc: "https://i.postimg.cc/WzrTR9vF/anjali.jpg",
       author: "Dr. Anjali Bajaj",
       category: "Training and Placement Officer",
       title: "Anjali Bajaj",
